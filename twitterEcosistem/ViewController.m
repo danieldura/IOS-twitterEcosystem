@@ -66,21 +66,5 @@
 }
 
 
-//-(void)requestUserEmail
-//{
-//  if ([[Twitter sharedInstance] session]) {
-//    
-//    TWTRShareEmailViewController *shareEmailViewController =[[TWTRShareEmailViewController alloc] initWithCompletion:^(NSString *email, NSError *error) {
-//       NSLog(@"Email %@ | Error: %@", email, error);
-//     }];
-//    
-//    [self presentViewController:shareEmailViewController
-//                       animated:YES
-//                     completion:nil];
-//  } else {
-//    // Handle user not signed in (e.g. attempt to log in or show an alert)
-//  }
-//}
-
 
 @end
