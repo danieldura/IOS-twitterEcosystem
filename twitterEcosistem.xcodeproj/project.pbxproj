@@ -15,6 +15,10 @@
 		0DBD5B1D1E9660DB0013B317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBD5B1B1E9660DB0013B317 /* LaunchScreen.storyboard */; };
 		0DBD5B281E9660DB0013B317 /* twitterEcosistemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5B271E9660DB0013B317 /* twitterEcosistemTests.m */; };
 		0DBD5B331E9660DB0013B317 /* twitterEcosistemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5B321E9660DB0013B317 /* twitterEcosistemUITests.m */; };
+		0DBD5B451E9661CA0013B317 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBD5B411E9661CA0013B317 /* Fabric.framework */; };
+		0DBD5B461E9661CA0013B317 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBD5B421E9661CA0013B317 /* TwitterKit.framework */; };
+		0DBD5B471E9661CA0013B317 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DBD5B431E9661CA0013B317 /* TwitterKitResources.bundle */; };
+		0DBD5B481E9661CA0013B317 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBD5B441E9661CA0013B317 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		0DBD5B2E1E9660DB0013B317 /* twitterEcosistemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twitterEcosistemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBD5B321E9660DB0013B317 /* twitterEcosistemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitterEcosistemUITests.m; sourceTree = "<group>"; };
 		0DBD5B341E9660DB0013B317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DBD5B411E9661CA0013B317 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		0DBD5B421E9661CA0013B317 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		0DBD5B431E9661CA0013B317 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		0DBD5B441E9661CA0013B317 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DBD5B451E9661CA0013B317 /* Fabric.framework in Frameworks */,
+				0DBD5B481E9661CA0013B317 /* TwitterCore.framework in Frameworks */,
+				0DBD5B461E9661CA0013B317 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 			children = (
 				0DBD5B0C1E9660DB0013B317 /* twitterEcosistem */,
 				0DBD5B261E9660DB0013B317 /* twitterEcosistemTests */,
+				0DBD5B491E9662130013B317 /* Frameworks */,
 				0DBD5B311E9660DB0013B317 /* twitterEcosistemUITests */,
 				0DBD5B0B1E9660DB0013B317 /* Products */,
 			);
@@ -140,6 +152,17 @@
 			path = twitterEcosistemUITests;
 			sourceTree = "<group>";
 		};
+		0DBD5B491E9662130013B317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DBD5B411E9661CA0013B317 /* Fabric.framework */,
+				0DBD5B421E9661CA0013B317 /* TwitterKit.framework */,
+				0DBD5B431E9661CA0013B317 /* TwitterKitResources.bundle */,
+				0DBD5B441E9661CA0013B317 /* TwitterCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +173,7 @@
 				0DBD5B061E9660DB0013B317 /* Sources */,
 				0DBD5B071E9660DB0013B317 /* Frameworks */,
 				0DBD5B081E9660DB0013B317 /* Resources */,
+				0DBD5B401E9661370013B317 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -208,7 +232,7 @@
 					0DBD5B091E9660DB0013B317 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8Y983CBZJJ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					0DBD5B221E9660DB0013B317 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -249,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DBD5B471E9661CA0013B317 /* TwitterKitResources.bundle in Resources */,
 				0DBD5B1D1E9660DB0013B317 /* LaunchScreen.storyboard in Resources */,
 				0DBD5B1A1E9660DB0013B317 /* Assets.xcassets in Resources */,
 				0DBD5B181E9660DB0013B317 /* Main.storyboard in Resources */,
@@ -270,6 +295,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DBD5B401E9661370013B317 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a4677b1597a989e75de2172863f4af5d65cce460 522df6f6271b6bd1ccd55a1850d4d2ab3663b18901864023d1bb87fe9322cd82";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DBD5B061E9660DB0013B317 /* Sources */ = {
@@ -426,10 +467,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Y983CBZJJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterEcosistem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobincube.twitterEcosistem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9fbf5337-0ac3-4a77-8872-011cc3ec0f97";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobincube Debug 2016";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -437,11 +486,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 8Y983CBZJJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterEcosistem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobincube.twitterEcosistem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a21c47cf-12c7-46bc-8291-b075162104a0";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobincube official 2016";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -514,6 +572,7 @@
 				0DBD5B391E9660DB0013B317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DBD5B3A1E9660DB0013B317 /* Build configuration list for PBXNativeTarget "twitterEcosistemTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +581,7 @@
 				0DBD5B3C1E9660DB0013B317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DBD5B3D1E9660DB0013B317 /* Build configuration list for PBXNativeTarget "twitterEcosistemUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +590,7 @@
 				0DBD5B3F1E9660DB0013B317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
