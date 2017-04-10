@@ -1,10 +1,10 @@
 # TwitterEcosystem
 
 ## Goal
-* Login with twitter getting mail
+* Login with twitter getting mail 
 
 ## Fabric SDK's
-* 
+* TwitterKit 2.8.1
 
 # Getting started
 To get stated and run the project follor these steps:

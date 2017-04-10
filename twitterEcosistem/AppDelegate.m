@@ -50,5 +50,13 @@
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    if ([[Twitter sharedInstance] application:app openURL:url options:options]) {
+        return YES;
+    }
+    
+    // If you handle other (non Twitter Kit) URLs elsewhere in your app, return YES. Otherwise
+    return NO;
+}
 @end

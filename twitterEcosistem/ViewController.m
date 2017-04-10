@@ -37,15 +37,18 @@
       
       [client sendTwitterRequest:request completion:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSError* error;
-        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data
+          NSDictionary* json = [[NSDictionary alloc]init];
+          if(data){
+        json = [NSJSONSerialization JSONObjectWithData:data
                                                              options:kNilOptions
                                                                error:&error];
-        
+          }
         //        NSArray* latestLoans = [json objectForKey:@"loans"];
         
         NSLog(@"loans: %@", json);
-        //        NSLog(@"Respuesta: %@",[data ]);
-
+//
+          NSString *mail = [json objectForKey:@"email"];
+          NSLog(@"Respuesta: %@",mail);
 //        NSLog(@"JSON: %@",data);
       }];
       
@@ -54,6 +57,8 @@
       NSLog(@"error: %@", [error localizedDescription]);
     }
   }];
+    logInButton.loginMethods = TWTRLoginMethodWebBased;
+
   logInButton.center = self.view.center;
   [self.view addSubview:logInButton];
   
